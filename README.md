@@ -4,19 +4,20 @@ To download the most recent project without installing GIT, please press the gre
 
 
 
+This application uses the LCD screen of the  TPP2(G2) to allow the user to interact with Tibbo *Cable Probe Sensors*. 
+
+
+
 ## Main Screen
 
-If a sensor is connected, the following will be displayed:
+If a *Cable Probe Sensor* is connected, the following will be displayed:
 
-- The sensor ID
-- The sensor type
-- The sensor reading
-
-
-
-If no sensor is connected, a prompt to connect a sensor will be displayed.
+- The *Cable Probe Sensor* ID
+- The *Cable Probe Sensor* type
+- The *Cable Probe Sensor* reading
 
 
 
-Sensors can be plugged an unplugged while the application is still running.
+If no *Cable Probe Sensor* is connected, a prompt to connect a *Cable Probe Sensor* will be displayed.
 
+*Cable Probe Sensors* can be connected and disconnected while the application is still running.
