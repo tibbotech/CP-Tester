@@ -4,6 +4,7 @@ include "display.tbh"
 dim current_probe_info as probe_info
 dim led_probe_timer, led_detect_timer as byte
 dim pattern_timer as dword = sys.timercount32
+dim detect_screen as boolean=false
 
 '====================================================================
 sub on_sys_init()
@@ -25,31 +26,40 @@ end sub
 
 sub detect_probe_type()
 		
-		no_probe_detected_screen()
-
+		if detect_screen=false then
+			no_probe_detected_screen()
+			detect_screen=true
+		end if
+		
 		detect_probe_leds()		
+
 		if tbt28_init(YES)=OK then
 			current_probe_info.probe_type=LIGHT
+			detect_screen=false
 			light_screen()
 		end if
 		
 		if tbt29_init(YES)=OK then
 			current_probe_info.probe_type=TEMP
+			detect_screen=false
 			temp_screen()
 		end if
 		
 		if tbt30_init(YES)=OK then
 			current_probe_info.probe_type=TEMP_HUM
+			detect_screen=false
 			temp_hum_screen()
 		end if
 		
 		if tbt35_init(YES)=OK then
 			current_probe_info.probe_type=PRESSURE
+			detect_screen=false
 			pressure_screen()
 		end if
 		
 		if tbt36_init(NO)=OK then
 			current_probe_info.probe_type=ACCELEROMETER
+			detect_screen=false
 			accelerometer_screen()
 		end if
 		
@@ -65,7 +75,7 @@ sub get_probe_reading()
 	
 	case LIGHT:
 		if tbt28_check()<>OK then
-				current_probe_info.probe_type=NONE
+			current_probe_info.probe_type=NONE
 		end if
 		update_light_reading()
 	
@@ -73,7 +83,7 @@ sub get_probe_reading()
 		if tbt29_check()<>OK then
 				current_probe_info.probe_type=NONE
 			end if
-			update_temp_reading()
+		update_temp_reading()
 	
 	case TEMP_HUM: 
 		if tbt30_check()<>OK then
