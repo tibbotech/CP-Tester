@@ -2,8 +2,8 @@
 version=1
 platform=TPP2W(G2)
 src_lib_ver=2_00_03
-name=CP_Tester
-output=CP_Tester.tpc
+name=CP-Tester-UI
+output=CP-Tester-UI.tpc
 debug=on
 defines= /dLCD_TYPE=SOLOMON_SSD1963 /dOBJECT_LCD=LCD_ENABLED /dOBJECT_FD=FD_ENABLED /dOBJECT_KP=KP_ENABLED /dOBJECT_WLN=WLN_ENABLED
 transport=udp_winpcap

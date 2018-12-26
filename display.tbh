@@ -1,11 +1,3 @@
-const PAT_ONE_SHORT_GREEN=			"---------------G~"
-const PAT_TWO_SHORT_GREEN=			"-------------G-G~"
-const PAT_THREE_SHORT_GREEN=		"-----------G-G-G"
-const PAT_THREE_SHORT_BOTH=			"--B-B-B--"
-const PAT_GREEN_ON=					"G~"
-const PAT_LONG_RED=					"RRRRRRRR-~"
-
-
 declare sub lcd_init()
 declare sub clear_screen()
 declare sub set_LED(pattern as byte)
