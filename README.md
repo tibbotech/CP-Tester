@@ -8,11 +8,11 @@ This application uses the LCD screen of the  TPP2(G2) to allow the user to inter
 
 
 
-- BP#01 or Tibbit 29 - Ambient Light sensor
+- BP#01 or Tibbit 29 - Ambient Temperature Sensor
 
 - BP#02 or Tibbit 30 - Ambient Temperature & Humidity Sensor
 
-- BP#03 or Tibbit 28 - Ambient Light sensor
+- BP#03 or Tibbit 28 - Ambient Light Sensor
 
 - Tibbit 36 - 3-Axis Accelerometer
 
