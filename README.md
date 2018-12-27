@@ -4,20 +4,33 @@ To download the most recent project without installing GIT, please press the gre
 
 
 
-This application uses the LCD screen of the  TPP2(G2) to allow the user to interact with Tibbo *Cable Probe Sensors*. 
+This application uses the LCD screen of the  TPP2(G2) to allow the user to interact with two different types of sensors, Tibbo *Cable Probe Sensors* and Tibbo *Tibbits*. The following sensors are available:
 
+
+
+- BP#01 or Tibbit 29 - Ambient Light sensor
+
+- BP#02 or Tibbit 30 - Ambient Temperature & Humidity Sensor
+
+- BP#03 or Tibbit 28 - Ambient Light sensor
+
+- Tibbit 36 - 3-Axis Accelerometer
+
+- Tibbit 35 - Barometric Pressure Sensor
 
 
 ## Main Screen
 
-If a *Cable Probe Sensor* is connected, the following will be displayed:
-
-- The *Cable Probe Sensor* ID
-- The *Cable Probe Sensor* type
-- The *Cable Probe Sensor* reading
+If a sensor is connected, the following will be displayed:
 
 
 
-If no *Cable Probe Sensor* is connected, a prompt to connect a *Cable Probe Sensor* will be displayed.
+- The sensor ID
+- The sensor type
+- The sensor reading
 
-*Cable Probe Sensors* can be connected and disconnected while the application is still running.
+
+
+If no sensor is connected, a prompt to connect a sensor will be displayed.
+
+Sensors can be connected and disconnected while the application is still running.
