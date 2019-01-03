@@ -25,8 +25,6 @@ include "super_i2c.tbh"
 include "ssi.tbh"
 include "tibbits.tbh"
 include "sock\trunk\sock.tbh"
-include "scap\scap.tbh"
-
 
 declare sub init_LEDS()
 declare sub detect_probe_type()

@@ -433,6 +433,9 @@ function tbt30_check() as ok_ng
 	hum=ftostr(h,FTOSTR_MODE_AUTO,5)
 	hum=parse_two_decimal_places(hum)+"%"
 	temp=ftostr(t,FTOSTR_MODE_AUTO,5)
+	if t<5 or t>50 then
+		hum="--%"
+	end if
 	temp=parse_two_decimal_places(temp)+"°C "
 	current_probe_info.reading = temp+hum
 
