@@ -22,7 +22,7 @@ address=0.1.2.3.4.32
 [address4]
 platform=TPP2W(G2)
 transport=udp_winpcap
-address=0.1.2.3.4.32
+address=0.36.119.86.59.60
 [file1]
 path=main.tbs
 type=basic

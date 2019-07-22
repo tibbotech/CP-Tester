@@ -409,7 +409,7 @@ function tbt30_check() as ok_ng
 	si2c_start()
 	si2c_write(TBT30_WRITE_ADDR)
 	si2c_stop()
-	delay_msecond(DELAY_50MS)
+	delay_msecond(100)
 
 	'fetch humidity data
 	si2c_start()

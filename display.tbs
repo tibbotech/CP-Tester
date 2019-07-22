@@ -154,7 +154,7 @@ sub temp_hum_screen()
 	lcd.print("Ambient Humidity & Temp Meter",15,20)	
 	lcd.print("Tibbit 30",130,50)	
 	lcd.print("OR",160,70)	
-	lcd.print("CP#01",145,90)	
+	lcd.print("CP#02",145,90)	
 	lcd.unlock
 
 end sub
