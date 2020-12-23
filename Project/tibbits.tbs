@@ -212,7 +212,7 @@ function tbt29_init(use_ssi as no_yes) as errcheck
 	if i2c_num_tbt29 <4 then
 		ssi.channel=i2c_num_tbt29
 		ssi.enabled=NO
-		ssi.baudrate=PL_SSI_BAUDRATES_400kHz
+		ssi.baudrate=PL_SSI_BAUD_400kHz
 		ssi.clkmap=CLK_PIN
 		ssi.dimap=DATA_PIN
 		ssi.domap=DATA_PIN
@@ -378,7 +378,7 @@ function tbt30_init(use_ssi as no_yes) as ok_ng
 	if i2c_num_tbt30<4 then
 		ssi.channel=i2c_num_tbt30
 		ssi.enabled=NO
-		ssi.baudrate=PL_SSI_BAUDRATES_400kHz
+		ssi.baudrate=PL_SSI_BAUD_400kHz
 		ssi.clkmap=CLK_PIN
 		ssi.dimap=DATA_PIN
 		ssi.domap=DATA_PIN
@@ -558,7 +558,7 @@ function tbt35_init(use_ssi as no_yes) as ok_ng
 	if i2c_num_tbt35<4 then
 		ssi.channel=i2c_num_tbt35
 		ssi.enabled=NO
-		ssi.baudrate=PL_SSI_BAUDRATES_400kHz
+		ssi.baudrate=PL_SSI_BAUD_400kHz
 		ssi.clkmap=CLK_PIN
 		ssi.dimap=DATA_PIN
 		ssi.domap=DATA_PIN
@@ -978,7 +978,7 @@ function tbt36_init(use_ssi as no_yes)as ok_ng
 	if i2c_num_tbt36<4 then
 		ssi.channel=i2c_num_tbt36
 		ssi.enabled=NO
-		ssi.baudrate=PL_SSI_BAUDRATES_400kHz
+		ssi.baudrate=PL_SSI_BAUD_400kHz
 		ssi.clkmap=CLK_PIN
 		ssi.dimap=DATA_PIN
 		ssi.domap=DATA_PIN
